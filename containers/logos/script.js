@@ -1,0 +1,1 @@
+console.log("Contenedor de logos cargado correctamente.");

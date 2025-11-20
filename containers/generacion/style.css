@@ -1,0 +1,83 @@
+/* ===== Sección Generacion ===== */
+#trinergy {
+  color: #3a4a4d;
+}
+
+#trinergy p {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+#trinergy strong {
+  font-weight: 700;
+}
+
+#trinergy .bg-gray-400 {
+  background-color: #1b3b4a40; /* línea gris suave */
+}
+
+/* ===== Franja redondeada ===== */
+.generacion-banner {
+  position: relative;
+  width: 75%;                     /* ocupa todo el ancho del contenedor padre */
+  max-width: 2600px;
+  height: 55px;                    /* más delgada */
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 1.6rem;               /* texto más grande */
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 32%; 
+
+
+  /* Degradado: inicia azul oscuro y se disuelve */
+ background: linear-gradient(
+  90deg,
+  #e39b3a 0%,    /* naranja intenso al inicio */
+  #ebb162 40%,   /* dorado medio */
+  #f4c78a 70%,   /* arena suave */
+  #fce9cc 100%   /* beige claro al final */
+);
+
+  border-top-left-radius: 45px;
+  border-bottom-left-radius: 45px;
+
+  /* Suaviza el final para efecto fade */
+  -webkit-mask-image: linear-gradient(90deg, black 92%, transparent 100%);
+  mask-image: linear-gradient(90deg, black 92%, transparent 100%);
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin-top: 25px;                   /* elimina margen superior */
+    overflow: hidden;
+}
+/* ===== MÉTRICAS DE GENERACIÓN ===== */
+.metric-badge {
+  background: linear-gradient(90deg, #f28c36 0%, #f89321 50%, #eb7311 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.25rem; /* text-3xl */
+  padding: 0.15rem 0.75rem; /* px-6 py-3 */
+  border-radius: 9999px; /* rounded-full */
+  text-align: center;
+  min-width: 100px;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover con efecto sutil */
+.metric-badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.metric-badge{
+  display:inline-flex;           /* clave para que no empuje el <p> abajo */
+  align-items:center;
+  justify-content:center;
+  width:64px; height:64px;       /* o el tamaño que uses */
+}

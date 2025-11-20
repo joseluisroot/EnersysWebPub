@@ -1,0 +1,45 @@
+/* ===== LOGO STRIP ===== */
+
+#logos {
+  position: relative;
+}
+
+#logos .logo-item {
+  max-height: 80px;         /* Altura máxima (ajustable) */
+  width: auto;              /* Mantiene proporción natural */
+  object-fit: contain;  
+  padding: 0   5px ;   /* Espaciado lateral uniforme */
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(1);
+}
+
+#logos .logo-wide { max-height: 90px; 
+  width: auto;              /* Mantiene proporción natural */
+  object-fit: contain;     /* Espaciado lateral uniforme */
+   padding: 0   5px ; 
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(1); }
+
+#logos .logo-item:hover,#logos .logo-wide:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Adaptación responsive */
+@media (max-width: 1024px) {
+  #logos .logo-item {
+    max-height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  #logos .logo-item {
+    max-height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  #logos .logo-item {
+    max-height: 50px;
+  }
+}
