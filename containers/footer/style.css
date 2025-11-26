@@ -1,0 +1,8 @@
+/* Sección Testimonial */
+#testimonial img {
+  object-fit: cover;
+}
+
+#testimonial p {
+  color: #3a4a4d;
+}

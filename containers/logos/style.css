@@ -1,7 +1,8 @@
 /* ===== LOGO STRIP ===== */
 
 #logos {
-  position: relative;
+  position: relative;  
+  width: 100%;
 }
 
 #logos .logo-item {
@@ -42,4 +43,9 @@
   #logos .logo-item {
     max-height: 50px;
   }
+}
+
+#logos .container {
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -1,0 +1,119 @@
+
+/* ===== Franja redondeada ===== */
+.transporte-banner {
+  position: relative;
+  width: 75%;                     /* ocupa todo el ancho del contenedor padre */
+  max-width: 2600px;
+  height: 55px;                    /* más delgada */
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 1.6rem;               /* texto más grande */
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 32%; 
+
+
+  /* Degradado: inicia aqua oscuro y se disuelve */
+background: linear-gradient(
+  90deg,
+  #199798 0%,
+  #28A9A9 40%,
+  #7AD4D4 70%,
+  rgba(25, 151, 152, 0) 100%
+);
+
+  border-top-left-radius: 45px;
+  border-bottom-left-radius: 45px;
+
+  /* Suaviza el final para efecto fade */
+  -webkit-mask-image: linear-gradient(90deg, black 92%, transparent 100%);
+  mask-image: linear-gradient(90deg, black 92%, transparent 100%);
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin-top: -63px;                   /* elimina margen superior */
+    overflow: hidden;
+}
+/* Tamaño de imágenes */
+.truck-image {
+  width: 420px;
+  height: auto;
+}
+/* Fondo aqua detrás de la imagen centrada
+  #splideCamiones .splide__slide.is-active img {
+    background: #199798;
+    padding: 20px;
+    border-radius: 10px;
+  } */
+
+  /* Título resaltado en el centro */
+  #splideCamiones .splide__slide.is-active h2,  #splideCamiones .splide__slide.is-active p {
+   /* color: #199798;*/
+   color: white;
+  }
+
+  /* Flechas personalizadas azul oscuro */
+  .splide__arrow {
+    background: transparent;
+    border: none;
+  }
+
+  .splide__arrow svg {
+    fill: #123c52;
+    width: 45px;
+    height: 45px;
+  }
+
+
+  .splide__slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* Centrado horizontal */
+  justify-content: center; /* Centrado vertical */
+  transition: transform 0.3s ease;
+  height: 500px;
+}
+
+
+.splide__slide.is-active::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 500px;
+  background-color: #199798; /* tu color aqua */
+  z-index: -1;
+}
+
+.splide__slide img {
+  position: relative;
+  z-index: 1;  
+  top: 50%;
+}
+
+.splide__arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #154760; /* Azul oscuro */
+  z-index: 10;
+}
+
+.splide__arrow--prev {
+  left: -3rem; /* Mueve más a la izquierda */
+}
+
+.splide__arrow--next {
+  right: -3rem; /* Mueve más a la derecha */
+}
+.splide__slide img {
+  position: relative;
+  z-index: 1;
+  top: 10px; /* Ajusta si es necesario moverlo ligeramente más al centro */
+}
+

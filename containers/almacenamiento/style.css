@@ -1,0 +1,56 @@
+/* ============================================
+   SECCIÓN: ALMACENAMIENTO
+================================================*/
+#almacenamiento {
+    background-color: lab(96.41% 1 0.34);
+}
+
+/* ===== Franja redondeada ===== */
+.almacenamiento-banner {
+  position: relative;
+  width: 75%;                     /* ocupa todo el ancho del contenedor padre */
+  max-width: 2600px;
+  height: 55px;                    /* más delgada */
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 1.6rem;               /* texto más grande */
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 32%; 
+
+
+  /* Degradado: inicia azul oscuro y se disuelve */
+background: linear-gradient(
+  90deg,
+  #C3D216 0%,                 /* tono más oscuro */
+  #c3d216 40%,                /* color base (rgb(195, 210, 22)) */
+  #e4f36a 70%,                /* tono más claro */
+  rgba(195, 210, 22, 0) 100%  /* mismo color pero transparente */
+);
+
+
+  border-top-left-radius: 45px;
+  border-bottom-left-radius: 45px;
+
+  /* Suaviza el final para efecto fade */
+  -webkit-mask-image: linear-gradient(90deg, black 92%, transparent 100%);
+  mask-image: linear-gradient(90deg, black 92%, transparent 100%);
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin-top: -63px;                   /* elimina margen superior */
+    overflow: hidden;
+}
+
+/* ---- Estructura principal del contenedor ---- */
+.storage-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* ---- Texto principal gris oscuro ---- */
+.storage-text {
+  color: #515a5c;

@@ -7,17 +7,16 @@ const components = [
   "logos",
   "ecosystem",
   "generacion",
-  /*"almacenamiento",
+  "almacenamiento",
   "transporte",
   "casos-exito",
-  "footer"*/
+  "footer"
 ];
 
 // Función para montar un componente
 async function mountComponent(name, mountEl) {
   const basePath = `containers/${name}`;
   const htmlUrl = `${basePath}/index.html`;
-  const cssUrl = `${basePath}/style.css`;
   const jsUrl = `${basePath}/script.js`;
 
   // Cargar HTML del contenedor
@@ -60,6 +59,38 @@ async function mountComponent(name, mountEl) {
     }
   }
 
+      initSplide();
+
   // Inicializaciones globales
   if (window.AOS) AOS.init({ duration: 1000, once: true });
 })();
+
+
+function initSplide() {
+  const el = document.querySelector("#splideCamiones");
+
+  if (!el) {
+    console.warn("Splide no encontró el carrusel todavía.");
+    return;
+  }
+
+  if (el.classList.contains("is-active")) {
+    console.log("⚠️ Splide ya está activo.");
+    return;
+  }
+
+  console.log("✅ Inicializando Splide...");
+
+  try {
+    new Splide(el, {
+      type: "loop",
+      perPage: 3,
+      focus: "center",
+      arrows: true,
+      pagination: false,
+      speed: 800,
+    }).mount();
+  } catch (e) {
+    console.error("❌ Error al inicializar Splide:", e);
+  }
+}
