@@ -9,7 +9,7 @@ const components = [
   "generacion",
   "almacenamiento",
   "transporte",
-  "casos-exito",
+  /*"casos-exito",*/
   "footer"
 ];
 
