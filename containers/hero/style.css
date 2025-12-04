@@ -51,3 +51,26 @@
   transform: scale(0.9);
   transform-origin: center;
 }
+
+/* altura mínima en móviles */
+@media (max-width: 768px) {
+  #hero {
+    min-height: 380px !important;
+    height: auto !important;
+  }
+
+  .hero-swiper,
+  .hero-swiper .swiper-wrapper,
+  .hero-swiper .swiper-slide {
+    min-height: 380px !important;
+    height: 380px !important;
+  }
+
+  .hero-swiper img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    display: block;
+  }
+}
+
