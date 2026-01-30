@@ -81,3 +81,51 @@
   justify-content:center;
   width:64px; height:64px;       /* o el tamaño que uses */
 }
+
+/* ===== Responsive: métricas (mobile-first) ===== */
+/* Target the metric grid inside the generacion section and make it
+   2 columns on small screens (<768px) and 1 column for very small (<450px). */
+#trinergy .max-w-screen-xl .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* two items per row on mobile */
+  gap: 2.5rem; /* matches gap-10 (40px) ~ 2.5rem */
+  grid-auto-flow: row; /* ensure uniform row filling */
+}
+
+/* Center each metric card in mobile views for balanced appearance */
+#trinergy .max-w-screen-xl .grid > div {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  gap: 1rem;
+}
+
+/* Very small screens: single column */
+@media (max-width: 450px) {
+  #trinergy .max-w-screen-xl .grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  /* Ensure each metric item is centered horizontally, with badge left and text right */
+  #trinergy .max-w-screen-xl .grid > div {
+    justify-content: center !important;
+    text-align: left !important;
+    flex-direction: row !important; /* keep badge and text side by side */
+    align-items: center !important;
+  }
+}
+
+/* Desktop: restore 3-column layout and left alignment */
+@media (min-width: 768px) {
+  #trinergy .max-w-screen-xl .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+
+  #trinergy .max-w-screen-xl .grid > div {
+    justify-content: flex-start !important;
+    text-align: left !important;
+  }
+}

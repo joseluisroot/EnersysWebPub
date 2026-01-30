@@ -89,6 +89,12 @@ function initSplide() {
       arrows: true,
       pagination: false,
       speed: 800,
+      breakpoints: {
+        767: {
+          perPage: 1,
+          focus: "center",
+        },
+      },
     }).mount();
   } catch (e) {
     console.error("❌ Error al inicializar Splide:", e);

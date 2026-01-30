@@ -1,48 +1,73 @@
-<section id="testimonial" class="py-20 bg-white">
+<section id="testimonial" class="py-20" style="background-color: lab(96.41% 1 0.34);">
   <div class="max-w-screen-xl mx-auto px-6 md:px-10">
 
-    <!-- GRID PERSONA + TEXTO -->
-<!--    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">-->
-
-<!--      &lt;!&ndash; IMAGEN IZQUIERDA &ndash;&gt;-->
-<!--      <div class="flex justify-center md:justify-start">-->
-<!--        <img src="assets/images/man.png" -->
-<!--             alt="Persona" -->
-<!--             class="max-w-sm w-full shadow-md rounded-md">-->
-<!--      </div>-->
-
-<!--      &lt;!&ndash; TEXTO + LOGO &ndash;&gt;-->
-<!--      <div class="flex flex-col justify-center">-->
-
-<!--        &lt;!&ndash; TEXTO &ndash;&gt;-->
-<!--        <p class="text-[#3a4a4d] text-lg leading-7 mb-6">-->
-<!--          “Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
-<!--          sed diam nonummy nibh euismod tincidunt ut laoreet dolore -->
-<!--          magna aliquam erat volutpat. Ut wisi enim ad minim veniam,-->
-<!--          quis nostrud exerci tation ullamcorper suscipit lobortis nisl-->
-<!--          ut aliquip ex ea commodo consequat.”-->
-<!--        </p>-->
-
-<!--        <p class="text-[#3a4a4d] fonts-semibold text-sm">-->
-<!--          LOREM IPSUM DOLOR SIT AME-->
-<!--        </p>-->
-<!--        <p class="text-[#3a4a4d] text-sm mb-6">-->
-<!--          cons ectetuer adipiscing elit-->
-<!--        </p>-->
-
-<!--        &lt;!&ndash; LOGO &ndash;&gt;-->
-<!--        &lt;!&ndash;<div class="flex justify-end">-->
-<!--          <img src="assets/images/hilasal_logo.png" -->
-<!--               alt="Hilasal" -->
-<!--               class="h-10 md:h-20">-->
-<!--        </div>&ndash;&gt;-->
-<!--      </div>-->
-<!--    </div>-->
-
-    <!-- TÍTULO INFERIOR -->
-    <h2 class="text-center text-[#3a4a4d] text-2xl md:text-3xl font-semibold tracking-wide mt-16">
+    <h2 class="text-center text-[#3a4a4d] text-2xl md:text-3xl font-semibold tracking-wide mt-16 mb-16">
       ENERGÍA DEL SOL AL SERVICIO DE LA SOSTENIBILIDAD
     </h2>
+
+    <div class="flex flex-col md:flex-row gap-10">
+        <!-- Sección Izquierda: Contact y Offices -->
+        <section class="w-full md:w-1/2">
+            <div class="space-y-8">
+                <article class="text-center md:text-left">
+                    <h5 class="text-xl font-semibold text-[#3a4a4d] mb-4">Contáctenos</h5>
+                    <div class="text-gray-600">
+                        <h6 class="text-lg">(+503) 2279-0307</h6>
+                        <h6 class="text-lg">(+503) 7855-8691</h6>
+                        <h6 class="text-lg">info@enersys-solar.com</h6>
+                    </div>
+                </article>
+                <article class="text-center md:text-left">
+                    <h4 class="text-3xl font-bold text-orange-500 mb-4">Nuestras Oficinas</h4>
+                    <div class="text-gray-600 space-y-4">
+                        <div>
+                            <h5 class="font-semibold">Guatemala</h5>
+                            <h6>21, Calle 11-60 Zona 1 Guatemala</h6>
+                            <h6>(+ 502) 4601-8645</h6>
+                            <h6>gcallen.gt@enersys-solar.com</h6>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold">El Salvador</h5>
+                            <h6>Av. Montevideo 9-i, Colonia San Mateo San Salvador</h6>
+                            <h6>(+ 503) 2279-0307 (+ 503) 7855-8691</h6>
+                            <h6>info@enersys-solar.com</h6>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold">Puerto Rico</h5>
+                            <h6>Urbanización Palma Real, Calle Adonidia #6 Guaynabo PR 00969</h6>
+                            <h6>+ 1 939-301-5555</h6>
+                            <h6>antonio.a@enersys-solar.com</h6>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Derecha: Contact Button, Form, Social -->
+        <section class="w-full md:w-1/2">
+            <div class="space-y-8">
+                <article>
+                    <p class="mb-6">
+                        <a href="contact_us#contact" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">Contáctenos</a>
+                    </p>
+                    <div>
+                        <form action="contact#contact" method="post" enctype="multipart/form-data" class="flex mb-6">
+                            <input type="email" name="correo" class="flex-1 px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="E-mail" required />
+                            <button class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-r-lg transition duration-300">
+                                <i class="far fa-paper-plane"></i>
+                            </button>
+                        </form>
+
+                        <div class="text-right">
+                            <span class="text-gray-600 mr-4">Síganos</span>
+                            <a href="https://www.facebook.com/profile.php?id=100063752403825&mibextid=LQQJ4d" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/company/enersys-solar/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
 
   </div>
 </section>
